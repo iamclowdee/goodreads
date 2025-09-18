@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodreads</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFF8DC; /* light yellowish background */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #FFD700; /* golden yellow */
+      color: #333;
+      padding: 15px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #FFEFD5; /* papaya whip */
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #FFD700;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      background-color: #FFFACD; /* lemon chiffon */
+      padding: 15px;
+      border-radius: 10px;
+      height: fit-content;
+    }
+    .content {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .book-card {
+      background-color: #FFFACD; 
+      padding: 10px;
+      border-radius: 10px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    .book-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .book-card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px;
+    }
+    .book-card p {
+      margin: 5px 0;
+    }
+    .star-rating {
+      color: #FFD700; /* gold stars */
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    .button {
+      display: inline-block;
+      margin: 5px;
+      padding: 6px 12px;
+      background-color: #FFD700;
+      color: #333;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .button:hover {
+      background-color: #FFA500;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>Goodreads</header>
+  <nav>
+    <a href="#">Profile</a>
+    <a href="#">Add Book</a>
+    <a href="#">Cart</a>
+    <a href="#">Wishlist</a>
+    <a href="#">Categories</a>
+    <a href="#">Logout</a>
+  </nav>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li>Fiction</li>
+        <li>Non-fiction</li>
+        <li>Science</li>
+        <li>History</li>
+        <li>Self-help</li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/713jIoMO3UL.jpg" alt="Book 1">
+        <h3>Atomic Habits</h3>
+        <p>Author: James Clear</p>
+        <p>Price: ₹500</p>
+        <div class="star-rating">★★★★★</div>
+        <button class="button">Add to Cart</button>
+        <button class="button">Add to Wishlist</button>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/51ouR9zr7oL._UF1000,1000_QL80_.jpg" alt="Book 2">
+        <h3>Ikigai</h3>
+        <p>Author: Héctor García</p>
+        <p>Price: ₹400</p>
+        <div class="star-rating">★★★★☆</div>
+        <button class="button">Add to Cart</button>
+        <button class="button">Add to Wishlist</button>
+      </div>
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/91IdJxE7HnL.jpg" alt="Book 3">
+        <h3>Educated</h3>
+        <p>Author: Tara Westover</p>
+        <p>Price: ₹600</p>
+        <div class="star-rating">★★★★★</div>
+        <button class="button">Add to Cart</button>
+        <button class="button">Add to Wishlist</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
